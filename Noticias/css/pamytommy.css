@@ -1,0 +1,60 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.letras{
+    font-size: 2em;
+}
+ul,li{
+    list-style: none;
+}
+li{
+    text-align: center;
+    padding: 10px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav{
+    grid-area: nav;
+    border: 1px solid black;
+    text-align: center;
+    background-color: pink;
+    width: 100%;
+    height: 3vw;
+}
+.desplegable{
+    position: relative;
+    cursor: pointer;
+}
+.contenido{
+    position: absolute;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(180, 244, 246);
+    width: 110px;
+}
+.desplegable:hover .contenido{
+    display: block;
+}
+button{
+    background-color: pink;
+    border-style: none;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+ul{
+    width: 28%;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+ul{
+    cursor: pointer;
+}
+.contenedorflex{
+    display: flex;
+}

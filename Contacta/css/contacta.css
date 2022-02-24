@@ -1,0 +1,96 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family:serif;
+}
+main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.letras{
+    color: white;
+}
+ul,li{
+    list-style: none;
+}
+li{
+    text-align: center;
+    padding: 10px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+nav ul li{
+    display: inline-block;
+}
+nav{
+    grid-area: nav;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 4vw;
+    padding: 20px;
+    text-align: center;    
+}
+.desplegable{
+    position: relative;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.contenido{
+    position: absolute;
+    display: none;
+    text-align: center;
+    padding: 15px;
+    padding-top: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 122px;
+}
+.desplegable:hover .contenido{
+    display: block;
+}
+button{
+    background-color: rgb(0, 0, 0);
+    border-style: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+ul,li,button{
+    cursor: pointer;
+    color: white;
+}
+
+#padre{
+    display: flex;
+    font-size: 1.2em;
+}
+#hijo{
+    flex-wrap: wrap;
+    width: 60%;
+}
+.comentarios{
+    margin-top: 180px;
+    text-align: left;
+
+}
+fieldset .comentarios{
+
+    font-size: 1.5em;
+}
+.comentarios button{
+    background-color: rgba(148, 148, 148, 0.418);
+    color: black;
+    font-weight: normal;
+    border: 1px solid black;
+    margin-top: 20px;
+}
